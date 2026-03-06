@@ -1,0 +1,129 @@
+<!doctype html>
+<!-- Redesigned by Nama Anda - Modern UI with Green Theme -->
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masuk & Daftar | Modern</title>
+    <!-- Font Awesome 5 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- Google Font: Poppins -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS Terpisah -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Radio buttons untuk tab -->
+      <input type="radio" name="tab" id="tab-login" checked />
+      <input type="radio" name="tab" id="tab-signup" />
+
+      <div class="card">
+        <!-- Bagian Kiri: Gambar dengan teks overlay -->
+        <div class="left-side">
+          <div class="image-wrapper">
+            <img
+              src="images/frontImg.jpg"
+              alt="Gambar latar depan"
+              class="img-front"
+            />
+            <img
+              src="images/backImg.jpg"
+              alt="Gambar latar belakang"
+              class="img-back"
+            />
+          </div>
+          <div class="overlay-text">
+            <div class="text-front">
+              <span class="text-1"
+                >Setiap teman baru adalah<br />petualangan baru</span
+              >
+              <span class="text-2">Mari terhubung</span>
+            </div>
+            <div class="text-back">
+              <span class="text-1"
+                >Selesaikan perjalanan panjang<br />dengan satu langkah</span
+              >
+              <span class="text-2">Ayo mulai</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bagian Kanan: Form dan Tab -->
+        <div class="right-side">
+          <div class="tabs">
+            <label for="tab-login" class="tab-login">Masuk</label>
+            <label for="tab-signup" class="tab-signup">Daftar</label>
+          </div>
+
+          <div class="forms-container">
+            <!-- Form Login -->
+            <form class="form-login">
+              <h2 class="title">Masuk</h2>
+              <div class="input-boxes">
+                <div class="input-box">
+                  <i class="fas fa-envelope"></i>
+                  <input type="email" placeholder="Masukkan email" required />
+                </div>
+                <div class="input-box">
+                  <i class="fas fa-lock"></i>
+                  <input
+                    type="password"
+                    placeholder="Masukkan kata sandi"
+                    required
+                  />
+                </div>
+                <div class="forgot-password">
+                  <a href="#">Lupa kata sandi?</a>
+                </div>
+                <button type="submit" class="btn-submit">Masuk</button>
+                <div class="switch-text">
+                  Belum punya akun?
+                  <label for="tab-signup">Daftar sekarang</label>
+                </div>
+              </div>
+            </form>
+
+            <!-- Form Daftar -->
+            <form class="form-signup">
+              <h2 class="title">Daftar</h2>
+              <div class="input-boxes">
+                <div class="input-box">
+                  <i class="fas fa-user"></i>
+                  <input
+                    type="text"
+                    placeholder="Masukkan nama lengkap"
+                    required
+                  />
+                </div>
+                <div class="input-box">
+                  <i class="fas fa-envelope"></i>
+                  <input type="email" placeholder="Masukkan email" required />
+                </div>
+                <div class="input-box">
+                  <i class="fas fa-lock"></i>
+                  <input
+                    type="password"
+                    placeholder="Buat kata sandi"
+                    required
+                  />
+                </div>
+                <button type="submit" class="btn-submit">Daftar</button>
+                <div class="switch-text">
+                  Sudah punya akun?
+                  <label for="tab-login">Masuk sekarang</label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
